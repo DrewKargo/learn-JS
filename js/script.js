@@ -46,7 +46,7 @@ function detectedPersonalLevel() {
 	} else if (personalMovieDB.count >= 30) {
 		console.log('Вы киноман');
 	} else {
-		console.log('Произошла ошибка')
+		console.log('Произошла ошибка');
 	}
 }
 
@@ -138,24 +138,59 @@ console.log(new UserInfo('Вася', 35));
 let text = 'привет!';
 console.log(text.length[0]toUpperCase);
 
+*/
 /*
 +Оля в конец,
 заменить Иштван на Петя
 -1 эл и показать
 маша и паша в начало
-
+*/
+/*
 let number = ["Первый","Второй","Третий","Четвертый"];
 function num() {
 	for (let i = 0; i< 3; i++) {
 			
-			console.log(number);
+		console.log(number);
 	}
 }
 
 
-let users = ["Ваня", "Петя"];
+let users = ["Ваня", "Петя",];
 users.push("Оля");
-console.log(number(), users);
+console.log(users);
+
+//Удалить Иштван и поместить в переменную.
+let arrOne = ['Ваня','Иштван','Оля',];
+let removed = arrOne.splice(1, 1);
+console.log(removed);
+console.log(arrOne);
+let arrtwo = arrOne.slice(0, 1);
+console.log(arrtwo);
+console.log(arrOne);
+console.log(arrOne.indexOf('Оля'));
+
+//Cоздать с из строки массмив.
+let str = 'Ваня,Иштван,Оля';
+let newArr = str.split(',', 2);
+console.log(newArr);
+
+//чему равен prval в начале работы метода
+let arr = [9, 2, 8,];
+let preduceValue = arr.reduce(function(preduceValue, item, index, arrey) {
+	console.log(preduceValue);
+});
+
+
+const obj = {
+	a: 'ty',
+	b: 'pidor',
+	c: {
+		d: 'sam',
+		e: 'pidr'
+	}
+}
+const newObj = Object.assign({}, obj);
+console.log(newObj);
+const ooo = {...obj};
+console.log(ooo);
 */
-
-
